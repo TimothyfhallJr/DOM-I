@@ -116,6 +116,13 @@ topContentParagraph[0].textContent = siteContent['main-content']['features-conte
 
 topContentParagraph[1].textContent = siteContent['main-content']['about-content'];
 
+let headerText = document.querySelectorAll( 'h4');
+
+headerText.forEach(heading => {
+  heading.style.color = 'blue';
+  heading.style.fontSize = 'xx-large';
+});
+
 // Bottom-Content
 
 const bottomContentH = document.querySelectorAll('.bottom-content h4');
@@ -133,6 +140,12 @@ bottomContentP[0].textContent = siteContent['main-content']['services-content'];
 bottomContentP[1].textContent = siteContent['main-content']['product-content'];
 
 bottomContentP[2].textContent = siteContent['main-content']['vision-content'];
+
+let pText = document.querySelectorAll( 'h4');
+
+pText.forEach(heading => {
+  heading.style.fontSize = 'large';
+});
 
 
 // Contact
