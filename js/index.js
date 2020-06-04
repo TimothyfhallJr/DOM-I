@@ -50,7 +50,11 @@ let middlepic = document.getElementById('middle-img');
 middlepic.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 // Nav-bar
+let navText = document.querySelectorAll( 'a');
 
+navText.forEach(heading => {
+  heading.style.color = 'green'
+});
 
 let services = document.querySelector('a','first-child');
 
@@ -70,6 +74,23 @@ about.textContent = 'About';
 
 const contact = document.querySelector('a:nth-child(6)');
 contact.textContent = 'Contact';
+
+const newNav = document.createElement('a');
+const nav = document.querySelector('nav');
+newNav.textContent = 'NewsLetter';
+console.log(newNav);
+nav.appendChild(newNav);
+
+const newNavTwo = document.createElement('a');
+newNavTwo.textContent = 'Blog';
+nav.prepend(newNavTwo);
+
+const navTextGreen = document.querySelectorAll('header nav a');
+navTextGreen.forEach(heading => {
+  heading.style.color = 'green'
+});
+
+
 
 // cta
 
